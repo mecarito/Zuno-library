@@ -11,7 +11,9 @@ module.exports = {
         'header-text': '#263238'
       },
       spacing: {
-        headerBg: '43.313rem'
+        headerBg: '43.313rem',
+        'footer-h': '6.313rem',
+        'page-px': '7.125rem'
       }
     }
   },

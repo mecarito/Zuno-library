@@ -1,19 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import FooterComponent from './components/footer/footerComponent.vue'
+import HeaderComponent from './components/header/headerComponent.vue'
+</script>
 
 <template>
   <header class="bg-bg-light h-headerBg">
-    <div class="flex flex-row items-center">
-      <img alt="Zuno library logo" src="@/assets/logo.svg" class="w-16 h-20" />
-      <p class="capitalize text-header-text text-2xl italic">Zuno library</p>
-    </div>
-    <img
-      alt="a man's face"
-      src="https://randomuser.me/api/portraits/med/men/75.jpg"
-      class="w-8 h-8 rounded-full"
-    />
+    <HeaderComponent />
   </header>
   <main></main>
-  <footer></footer>
+  <footer class="bottom-0 left-0 right-0 fixed">
+    <FooterComponent />
+  </footer>
 </template>
 
 <style scoped></style>
