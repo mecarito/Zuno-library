@@ -42,7 +42,7 @@ export default defineComponent({
       </nav>
     </section>
 
-    <section class="flex flex-row items-center space-x-2">
+    <section class="flex flex-row items-center space-x-3">
       <BagIcon />
       <img
         alt="a man's face"
