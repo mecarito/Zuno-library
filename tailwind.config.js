@@ -17,7 +17,9 @@ module.exports = {
         'page-px': '7.125rem',
         'book-w': '13.5rem',
         'book-h': '24.25rem',
-        'book-image-h': '17.728rem'
+        'book-image-h': '17.728rem',
+        'search-h': '4.5rem',
+        'search-btn-w': '16rem'
       }
     }
   },
