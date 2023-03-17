@@ -1,23 +1,20 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <header>
-    <img alt="Vue logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div>
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <main class="bg-bg-light h-headerBg">
+    <header>
+      <div class="flex flex-row items-center">
+        <img alt="Zuno library logo" src="@/assets/logo.svg" class="w-16 h-20" />
+        <p class="capitalize text-header-text text-2xl italic">Zuno library</p>
+      </div>
+      <img
+        alt="a man's face"
+        src="https://randomuser.me/api/portraits/med/men/75.jpg"
+        class="w-8 h-8 rounded-full"
+      />
+    </header>
+    <div></div>
+  </main>
 </template>
 
 <style scoped></style>
