@@ -15,7 +15,7 @@ export default defineComponent({
   components: {
     BagIcon
   }
-}) 
+})
 </script>
 
 <template>
@@ -27,10 +27,15 @@ export default defineComponent({
       </div>
       <nav>
         <ul class="flex flex-row space-x-4 items-center">
-          <li v-for="page of pages" :key="page" class="px-4 py-2 cursor-pointer" :class="{
-            'bg-white rounded-2xl ': page === 'Home',
-            'hover:bg-white hover:rounded-2xl': page !== 'Home'
-          }">
+          <li
+            v-for="page of pages"
+            :key="page"
+            class="px-4 py-2 cursor-pointer"
+            :class="{
+              'bg-white rounded-2xl ': page === 'Home',
+              'hover:bg-white hover:rounded-2xl': page !== 'Home'
+            }"
+          >
             <p class="text-dark">{{ page }}</p>
           </li>
         </ul>
@@ -39,7 +44,11 @@ export default defineComponent({
 
     <section class="flex flex-row items-center space-x-3">
       <BagIcon />
-      <img alt="a man's face" src="https://randomuser.me/api/portraits/med/men/75.jpg" class="w-7 h-7 rounded-full" />
+      <img
+        alt="a man's face"
+        src="https://randomuser.me/api/portraits/med/men/75.jpg"
+        class="w-7 h-7 rounded-full"
+      />
     </section>
   </div>
 </template>

@@ -23,9 +23,8 @@ export default defineComponent({
   },
   methods: {
     searchBook(searchTerm: string) {
-      this.books = books.filter(book => {
-        return book.Title.toLowerCase()
-          .includes(searchTerm.toLowerCase().trim())
+      this.books = books.filter((book) => {
+        return book.Title.toLowerCase().includes(searchTerm.toLowerCase().trim())
       })
     }
   }
