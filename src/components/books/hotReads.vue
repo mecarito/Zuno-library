@@ -3,9 +3,6 @@ import { defineComponent, type PropType } from 'vue'
 import type { Book } from '../../types'
 
 export default defineComponent({
-  data() {
-    return {}
-  },
   props: {
     book: {
       type: Object as PropType<Book>,

@@ -9,7 +9,7 @@ import FireIcon from '@/components/icons/IconFire.vue'
 <template>
   <header class="bg-bg-light h-headerBg relative">
     <HeaderComponent />
-    <div class="px-page-px mt-12 w-1/2 tracking-wider">
+    <div class="px-page-px mt-12 w-header-title-w  tracking-wider">
       <h1 class="text-6xl leading-12">
         Get your <span class="font-semibold">favourite books</span> all in
         <span class="font-semibold"> one place</span>
@@ -20,7 +20,7 @@ import FireIcon from '@/components/icons/IconFire.vue'
     <img
       alt="person reading a book"
       src="@/assets/bg-image.svg"
-      class="w-header-bg-w h-full absolute right-page-px top-0"
+      class="w-header-bg-w h-full absolute right-0 lgxxl:right-page-px top-0"
     />
     <div class="absolute -bottom-44 px-page-px w-full">
       <div class="flex flex-row space-x-2 items-center">

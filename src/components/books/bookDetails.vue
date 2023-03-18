@@ -5,9 +5,6 @@ import BookmarkIcon from '../icons/IconBookmark.vue'
 import type { Book } from '../../types'
 
 export default defineComponent({
-  data() {
-    return {}
-  },
   props: {
     book: {
       type: Object as PropType<Book>,

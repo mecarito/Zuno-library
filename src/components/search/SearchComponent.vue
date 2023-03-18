@@ -26,11 +26,11 @@ export default defineComponent({
      border-gray-200 my-10 px-4 py-2 text-dark rounded-lg mr-40 space-x-4"
   >
     <div class=" flex flex-row items-center w-full">
-      <div class="flex flex-row items-center space-x-6 cursor-pointer w-56">
+      <div class="flex flex-row items-center space-x-6 cursor-pointer lg:w-72  lgxxl:w-56">
         <p class="text-xl">All Categories</p>
         <ChevronDownIcon />
       </div>
-      <div class="w-[3px] h-10 bg-dark opacity-20"></div>
+      <div class="w-[3px] h-10 bg-dark opacity-20 lgxxl:ml-2"></div>
       <input
         type="text"
         placeholder="Find the book you like..."

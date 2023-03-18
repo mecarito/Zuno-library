@@ -23,10 +23,16 @@ module.exports = {
         'btn-h': '3.188rem',
         'header-bg-w': '44.813rem',
         'hot-reads-book-h': '22.125rem',
-        'hot-reads-book-w': '15.164rem'
+        'hot-reads-book-w': '15.164rem',
+        'header-title-w': '55rem'
       },
       lineHeight: {
         12: '4.5rem'
+      },
+      screens: {
+        lg: '1280px',
+        lgxl: '1366px',
+        lgxxl: '1920px'
       }
     }
   },
