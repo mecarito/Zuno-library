@@ -14,7 +14,8 @@ import FireIcon from '@/components/icons/IconFire.vue'
         Get your <span class="font-semibold">favourite books</span> all in
         <span class="font-semibold"> one place</span>
       </h1>
-      <button class="bg-green text-white rounded-3xl w-btn-w h-btn-h mt-10">View Categories</button>
+      <button class="bg-green text-white rounded-3xl 
+      w-btn-w h-btn-h mt-10">View Categories</button>
     </div>
     <img
       alt="person reading a book"
@@ -22,11 +23,11 @@ import FireIcon from '@/components/icons/IconFire.vue'
       class="w-header-bg-w h-full absolute right-page-px top-0"
     />
     <div class="absolute -bottom-44 px-page-px w-full">
-      <div class="flex flex-row space-x-2">
+      <div class="flex flex-row space-x-2 items-center">
         <FireIcon />
         <p class="text-2xl text-dark">Hot Reads</p>
       </div>
-      <div class="overflow-x-scroll">
+      <div class="overflow-x-scroll scrollbar">
         <HotReadsView />
       </div>
     </div>
@@ -38,3 +39,13 @@ import FireIcon from '@/components/icons/IconFire.vue'
     <FooterComponent />
   </footer>
 </template>
+
+<style scoped>
+.scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+</style>

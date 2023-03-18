@@ -16,7 +16,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="h-hot-reads-book-h w-hot-reads-book-w ">
+  <div class="h-hot-reads-book-h w-hot-reads-book-w drop-shadow-lg">
     <img alt="book cover" src="@/assets/book-cover.svg" class="h-full w-full" />
   </div>
 </template>
