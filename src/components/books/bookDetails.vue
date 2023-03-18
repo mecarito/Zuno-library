@@ -24,7 +24,7 @@ export default defineComponent({
 <template>
   <div class="h-book-h w-book-w flex flex-col">
     <section class="h-book-image-h bg-book-image-bg relative">
-      <img alt="Zuno library logo" src="@/assets/book-cover.svg" class="h-book-image-h w-full" />
+      <img alt="book cover" src="@/assets/book-cover.svg" class="h-book-image-h w-full" />
       <div class="absolute top-4 right-4">
         <BookmarkIcon />
       </div>

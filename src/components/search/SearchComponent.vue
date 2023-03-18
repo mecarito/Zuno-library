@@ -26,10 +26,10 @@ export default defineComponent({
     <input
       type="text"
       placeholder="Find the book you like..."
-      class="mx-4 h-full outline-none placeholder-dark w-full px-4"
+      class="mx-4 h-full outline-none placeholder-dark px-4"
     />
     <button
-      class=" w-search-btn-w h-full bg-green text-white flex flex-row justify-center items-center rounded-lg space-x-4"
+      class="w-btn-w h-btn-h bg-green text-white flex flex-row justify-center items-center rounded-lg space-x-4"
     >
       <p class="text-xl">Search</p>
       <SearchIcon />

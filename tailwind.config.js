@@ -19,7 +19,14 @@ module.exports = {
         'book-h': '24.25rem',
         'book-image-h': '17.728rem',
         'search-h': '4.5rem',
-        'search-btn-w': '16rem'
+        'btn-w': '12.5rem',
+        'btn-h': '3.188rem',
+        'header-bg-w': '44.813rem',
+        'hot-reads-book-h': '22.125rem',
+        'hot-reads-book-w': '15.164rem'
+      },
+      lineHeight: {
+        12: '4.5rem'
       }
     }
   },
