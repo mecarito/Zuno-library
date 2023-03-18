@@ -3,9 +3,15 @@ import { defineComponent } from 'vue'
 import SearchIcon from '../icons/IconSearch.vue'
 import ChevronDownIcon from '../icons/IconChevronDown.vue'
 
+interface Data {
+  search: string
+}
+
 export default defineComponent({ 
-  data() {
-    return {}
+  data(): Data {
+    return {
+      search: ''
+    }
   },
   components: {
     SearchIcon,
@@ -29,11 +35,14 @@ export default defineComponent({
         type="text"
         placeholder="Find the book you like..."
         class="mx-4 h-full outline-none placeholder-dark px-4 w-full"
+        v-model="search"
+        @input="$emit('searchTerm', search)"
       />
     </div>
     <button
       class="w-btn-w h-btn-h bg-green text-white flex flex-row 
       justify-center items-center rounded-lg space-x-4"
+      @click="$emit('searchTerm', search)"
     >
       <p class="text-xl">Search</p>
       <SearchIcon />

@@ -16,18 +16,25 @@ export default defineComponent({
       books
     }
   },
-
   components: {
     BookDetails,
     BookOpenIcon,
     SearchComponent
+  },
+  methods: {
+    searchBook(searchTerm: string) {
+      this.books = books.filter(book => {
+        return book.Title.toLowerCase()
+          .includes(searchTerm.toLowerCase().trim())
+      })
+  }
   }
 })
 </script>
 
 <template>
   <div class="px-page-px">
-    <SearchComponent />
+    <SearchComponent @searchTerm="searchBook"/>
     <div class="flex flex-row items-center space-x-4 mt-12 my-8">
       <BookOpenIcon />
       <p class="text-2xl text-dark capitalize">Book Shelf</p>
