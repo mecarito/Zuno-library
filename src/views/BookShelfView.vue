@@ -27,14 +27,14 @@ export default defineComponent({
         return book.Title.toLowerCase()
           .includes(searchTerm.toLowerCase().trim())
       })
-  }
+    }
   }
 })
 </script>
 
 <template>
   <div class="px-page-px">
-    <SearchComponent @searchTerm="searchBook"/>
+    <SearchComponent @searchTerm="searchBook" />
     <div class="flex flex-row items-center space-x-4 mt-12 my-8">
       <BookOpenIcon />
       <p class="text-2xl text-dark capitalize">Book Shelf</p>

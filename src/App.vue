@@ -1,9 +1,29 @@
-<script setup lang="ts">
+<script  lang="ts">
+import { defineComponent } from 'vue'
 import FooterComponent from './components/footer/footerComponent.vue'
 import HeaderComponent from './components/header/headerComponent.vue'
 import BookShelfView from './views/BookShelfView.vue'
 import HotReadsView from './views/HotReadsView.vue'
 import FireIcon from '@/components/icons/IconFire.vue'
+
+export default defineComponent({
+  components: {
+    FooterComponent,
+    HeaderComponent,
+    BookShelfView,
+    HotReadsView,
+    FireIcon
+  },
+  methods: {
+    scrollToRight() {
+      const element = this.$refs.books as HTMLElement
+      element.scrollTo({
+        left: 500,
+        behavior: "smooth",
+      });
+    }
+  }
+})
 </script>
 
 <template>
@@ -15,20 +35,17 @@ import FireIcon from '@/components/icons/IconFire.vue'
         <span class="font-semibold"> one place</span>
       </h1>
       <button class="bg-green text-white rounded-3xl 
-      w-btn-w h-btn-h mt-10">View Categories</button>
+       w-btn-w h-btn-h mt-10">View Categories</button>
     </div>
-    <img
-      alt="person reading a book"
-      src="@/assets/bg-image.svg"
-      class="w-header-bg-w h-full absolute right-0 lgxxl:right-page-px top-0"
-    />
+    <img alt="person reading a book" src="@/assets/bg-image.svg"
+      class="w-header-bg-w h-full absolute right-0 lgxxl:right-page-px top-0" />
     <div class="absolute -bottom-44 px-page-px w-full">
       <div class="flex flex-row space-x-2 items-center">
         <FireIcon />
         <p class="text-2xl text-dark">Hot Reads</p>
       </div>
-      <div class="overflow-x-scroll scrollbar">
-        <HotReadsView />
+      <div class="overflow-x-scroll scrollbar" id="books" ref="books">
+        <HotReadsView @scrollRight="scrollToRight" />
       </div>
     </div>
   </header>
@@ -45,6 +62,7 @@ import FireIcon from '@/components/icons/IconFire.vue'
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
 .scrollbar::-webkit-scrollbar {
   display: none;
 }

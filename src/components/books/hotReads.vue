@@ -10,7 +10,7 @@ export default defineComponent({
     }
   }
 })
-</script>
+</script> 
 
 <template>
   <div class="h-hot-reads-book-h w-hot-reads-book-w drop-shadow-lg">
